@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 160 20% 97%;
+    --foreground: 210 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 15%;
+
+    --primary: 180 48% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 160 15% 94%;
+    --secondary-foreground: 210 20% 15%;
+
+    --muted: 160 10% 92%;
+    --muted-foreground: 210 10% 50%;
+
+    --accent: 180 48% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 160 15% 90%;
+    --input: 160 15% 90%;
+    --ring: 171 60% 47%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 171 60% 47%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 15% 94%;
+    --sidebar-accent-foreground: 210 20% 15%;
+    --sidebar-border: 160 15% 90%;
+    --sidebar-ring: 171 60% 47%;
+  }
+
+  .dark {
+    --background: 210 20% 8%;
+    --foreground: 160 10% 95%;
+    --card: 210 20% 12%;
+    --card-foreground: 160 10% 95%;
+    --popover: 210 20% 12%;
+    --popover-foreground: 160 10% 95%;
+    --primary: 171 60% 47%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 15% 18%;
+    --secondary-foreground: 160 10% 95%;
+    --muted: 210 15% 18%;
+    --muted-foreground: 160 10% 60%;
+    --accent: 171 60% 47%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 15% 20%;
+    --input: 210 15% 20%;
+    --ring: 171 60% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+  }
+
+  [dir="rtl"] body {
+    font-family: 'Noto Sans Arabic', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70;
+  }
+
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50 shadow-lg shadow-primary/5;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 px-4;
+  }
+}

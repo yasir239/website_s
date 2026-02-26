@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="none"/>
+  <!-- Top-left corner -->
+  <path d="M60 60 L60 170 L100 170 L100 100 L170 100 L170 60 Z" fill="#3CAAAA"/>
+  <!-- Top-right corner -->
+  <path d="M452 60 L342 60 L342 100 L412 100 L412 170 L452 170 Z" fill="#3CAAAA"/>
+  <!-- Bottom-left corner -->
+  <path d="M60 452 L170 452 L170 412 L100 412 L100 342 L60 342 Z" fill="#3CAAAA"/>
+  <!-- Bottom-right corner -->
+  <path d="M452 452 L452 342 L412 342 L412 412 L342 412 L342 452 Z" fill="#3CAAAA"/>
+  <!-- Center dot -->
+  <circle cx="256" cy="256" r="35" fill="#3CAAAA"/>
+</svg>
