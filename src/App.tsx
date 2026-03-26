@@ -9,6 +9,7 @@ import AuthPage from "./pages/AuthPage";
 import RegisterPage from "./pages/RegisterPage";
 import PendingPage from "./pages/PendingPage";
 import NotFound from "./pages/NotFound";
+import YasserProfile from "./pages/YasserProfile";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,9 @@ const App = () => (
             <Route path="/auth" element={<AuthPage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/pending" element={<PendingPage />} />
+            <Route path="/photographer" element={<YasserProfile />} />
+            <Route path="/yasser" element={<YasserProfile />} />
+            <Route path="/yasir" element={<YasserProfile />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
