@@ -704,10 +704,12 @@ export default function YasserProfile() {
     const prevDir = document.documentElement.dir;
     const prevBg = document.body.style.backgroundColor;
     const prevColor = document.body.style.color;
+    const prevTitle = document.title;
 
     document.documentElement.dir = "rtl";
     document.body.style.backgroundColor = "#0A0A0A";
     document.body.style.color = "#FAFAFA";
+    document.title = "المصور ياسر";
 
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -717,6 +719,7 @@ export default function YasserProfile() {
       document.documentElement.dir = prevDir;
       document.body.style.backgroundColor = prevBg;
       document.body.style.color = prevColor;
+      document.title = prevTitle;
     };
   }, []);
 
